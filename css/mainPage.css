@@ -1,13 +1,19 @@
+:root {
+    --main-color: #FCAA72;
+}
+
 body {
     display: grid;
     grid-template-areas: 
         "header header header"
-        "blank nav blank"
+        "nav nav nav"
         "footer footer footer";
-    grid-template-rows: 144px 1fr 188px;
+    grid-template-rows: 9rem 1fr 11.75rem;
     margin: 0;
 }
+
 header {
     padding: 20px;
-    background-color: aqua;
+    grid-column-start: span 4;
+    border: 2px solid var(--main-color);
 }
