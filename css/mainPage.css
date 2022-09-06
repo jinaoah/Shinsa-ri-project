@@ -1,0 +1,13 @@
+body {
+    display: grid;
+    grid-template-areas: 
+        "header header header"
+        "blank nav blank"
+        "footer footer footer";
+    grid-template-rows: 144px 1fr 188px;
+    margin: 0;
+}
+header {
+    padding: 20px;
+    background-color: aqua;
+}
