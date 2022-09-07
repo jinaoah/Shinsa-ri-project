@@ -8,12 +8,40 @@ body {
         "header header header"
         "nav nav nav"
         "footer footer footer";
-    grid-template-rows: 9rem 1fr 11.75rem;
+    grid-template-rows: 9rem 28rem 60.125rem 48.25rem 63.625rem 11.75rem;
+    grid-template-columns: 8.75rem 1fr 8.75rem;
     margin: 0;
 }
 
 header {
     padding: 20px;
     grid-column-start: span 4;
-    border: 2px solid var(--main-color);
+    border: 1rem solid var(--main-color);
+}
+
+div {
+    padding: 20px;
+}
+
+.storeImg {
+    grid-column-start: span 4;
+    border: 1rem solid yellowgreen;
+}
+
+.introduce {
+    margin-top: 8.125rem;
+    border: 1rem solid aliceblue;
+    grid-column-start: 2;
+}
+
+.bestMenu {
+    grid-column-start: 2;
+    border: 1rem solid pink;
+    margin-top: 8.5rem;
+
+}
+.directions {
+    border: 1rem solid orange;
+    grid-column-start: 2;
+    margin-top: 12rem;
 }
