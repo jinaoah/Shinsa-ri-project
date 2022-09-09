@@ -16,11 +16,7 @@ body {
 header {
     padding: 20px;
     grid-column-start: span 4;
-    border: 1rem solid var(--main-color);
-}
-
-div {
-    padding: 20px;
+    /* border: 1rem solid var(--main-color); */
 }
 
 .storeImg {
@@ -51,4 +47,14 @@ footer {
     grid-column-start: span 3;
     padding: 20px;
     margin-top: 28.75rem;
+}
+
+.logo {
+    height: 5.25rem;
+    width: 11.563rem;
+}
+
+header > div {
+    float: left;
+    margin-right: 9.5rem;
 }
