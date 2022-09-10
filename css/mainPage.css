@@ -13,35 +13,29 @@ body {
     margin: 0;
 }
 
+/*그리드 레이아웃*/
 header {
     padding: 20px;
     grid-column-start: span 4;
-    /* border: 1rem solid var(--main-color); */
 }
-
-.storeImg {
-    grid-column-start: span 4;
+div { 
     border: 1rem solid orange;
 }
-
-.introduce {
+body>:nth-child(2) { /*가게 이미지*/
+    grid-column-start: span 4; 
+}
+body>:nth-child(3) {
     margin-top: 8.125rem;
-    border: 1rem solid orange;
     grid-column-start: 2;
 }
-
-.bestMenu {
+body>:nth-child(4) {
     grid-column-start: 2;
-    border: 1rem solid orange;
     margin-top: 8.5rem;
-
 }
-.directions {
-    border: 1rem solid orange;
+body>:nth-child(5) {
     grid-column-start: 2;
     margin-top: 12rem;
 }
-
 footer {
     border: 1rem solid orange;
     grid-column-start: span 3;
@@ -49,12 +43,23 @@ footer {
     margin-top: 28.75rem;
 }
 
+/* 헤더 */
+header{
+    display: flex;
+}
+
+header > ul{
+    list-style: none;
+    justify-content: left;
+}
+ul>li {
+    float: left;
+    margin-right: 9.5rem;
+    margin-top: 1rem;
+    font-size: 20px;
+}
 .logo {
     height: 5.25rem;
     width: 11.563rem;
-}
-
-header > div {
-    float: left;
-    margin-right: 9.5rem;
+    margin-right: 15.375rem;
 }
