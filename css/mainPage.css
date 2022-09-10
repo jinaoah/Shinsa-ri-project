@@ -19,7 +19,7 @@ header {
     grid-column-start: span 4;
 }
 div { 
-    border: 1rem solid orange;
+    border: 5px solid black;
 }
 body>:nth-child(2) { /*가게 이미지*/
     grid-column-start: span 4; 
@@ -37,7 +37,7 @@ body>:nth-child(5) {
     margin-top: 12rem;
 }
 footer {
-    border: 1rem solid orange;
+    border: 5px solid black;
     grid-column-start: span 3;
     padding: 20px;
     margin-top: 28.75rem;
@@ -57,6 +57,10 @@ ul>li {
     margin-right: 9.5rem;
     margin-top: 1rem;
     font-size: 20px;
+}
+ul>li:hover {
+    transition: 0.5s;
+    border-bottom: 4px solid var(--main-color);
 }
 .logo {
     height: 5.25rem;
