@@ -4,10 +4,6 @@
 
 body {
     display: grid;
-    grid-template-areas: 
-        "header header header"
-        "nav nav nav"
-        "footer footer footer";
     grid-template-rows: 9rem 28rem 60.125rem 48.25rem 63.625rem 11.75rem;
     grid-template-columns: 8.75rem 1fr 8.75rem;
     margin: 0;
@@ -57,10 +53,6 @@ ul>li {
     margin-right: 9.5rem;
     margin-top: 1rem;
     font-size: 20px;
-}
-ul>li:hover {
-    transition: 0.5s;
-    border-bottom: 4px solid var(--main-color);
 }
 .logo {
     height: 5.25rem;
