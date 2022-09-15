@@ -1,0 +1,30 @@
+/* 헤더 */
+/* 
+
+
+ul>li {
+    float: left;
+    margin-right: 9.5rem;
+    font-size: 20px;
+}
+*/
+header{
+    display: flex;
+}
+header > ul{
+    list-style: none;
+    /* justify-content: left; */
+}
+ul>li {
+    float: left;
+    margin-top: 1rem;
+    /* margin-left: 15.375rem; */
+    margin-right: 9.5rem;
+
+}
+.logo {
+    height: 5.25rem;
+    width: 11.563rem;
+    
+    /* margin-right: 15.375rem; */
+} 
