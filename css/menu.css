@@ -1,30 +1,53 @@
-/* 헤더 */
-/* 
+/* Font */
+@import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
 
-
-ul>li {
-    float: left;
-    margin-right: 9.5rem;
-    font-size: 20px;
+.nanumgothic * {
+    font-family: 'Nanum Gothic', sans-serif;
 }
-*/
-header{
+
+:root {
+    --main-color: #FCAA72;
+
+    /* font */
+    --menu-font-size: 1.5rem;
+    --category-font-size: 2.25rem;
+    /* --category-font-weight: ; */
+    --text-color: #000;  
+    --body-font: 'Nanum Gothic';
+}
+
+body {
+    font-family: var(--body-font);
+}
+
+.grid-container {
+    display: grid;
+    margin: 0;
+}
+
+header {
     display: flex;
 }
-header > ul{
+
+header>ul {
     list-style: none;
-    /* justify-content: left; */
 }
+
 ul>li {
     float: left;
     margin-top: 1rem;
-    /* margin-left: 15.375rem; */
+    font-size: 20px;
     margin-right: 9.5rem;
-
 }
+
+a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
 .logo {
     height: 5.25rem;
     width: 11.563rem;
-    
-    /* margin-right: 15.375rem; */
-} 
+    margin-right: 15.375rem;
+}
+
