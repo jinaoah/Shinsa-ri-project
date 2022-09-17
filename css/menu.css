@@ -67,14 +67,22 @@ a {
     color: var(--main-color);
     transition: 0.3s;
 }
+h3 {
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: var(--main-color);
+    text-decoration-thickness: 3px;
+}
 
 /* 반응형 */
 @media screen and (max-width: 1140px) {
     header, .nav-menu>ul {
         display: block;
     }
-    .nav-menu>ul {
-        /* visibility: hidden; */
+    .nav-list {
+        transition: 0.3s;
+        overflow: hidden;
+        height: 0;
     }
     ul>li {
         margin-top: 10px;
@@ -95,5 +103,8 @@ a {
         position: fixed;
         top: 20px;
         right: 20px;
+    }
+    .show-menu {
+        height: 754px;
     }
 }
