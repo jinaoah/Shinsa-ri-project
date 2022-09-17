@@ -6,27 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/menu.css">
+    <!-- boxicon -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
 <body>
     <div class="grid-container">
         <!-- header -->
         <header>
             <img src="img/logo.png" alt="" class="logo">
-            <ul>
-                <li class="nav-item">
-                    <a href="" class="nav-link">소개</a>
-                </li>
-                <li class="nav-item">
-                    <a href="" class="nav-link">메뉴</a>
-                </li>
-                <li class="nav-item">
-                    <a href="" class="nav-link">리뷰</a>
-                </li>
-                <li class="nav-item">
-                    <a href="" class="nav-link">오시는 길</a>
-                </li>
-            </ul>
+            <div class="nav-menu">
+                <ul class="nav-list" id="nac-list">
+                    <li class="nav-item">
+                        <a href="" class="nav-link">소개</a></li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">메뉴</a></li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">리뷰</a></li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">오시는 길</a></li>
+                </ul>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <i class='bx bx-menu bx-lg'></i>
+            </div>
         </header>
     </div>
+
+    <script src="js/toggleMenu.js"></script>
 </body>
 </html>
