@@ -7,7 +7,9 @@
 
 :root {
     --main-color: #FCAA72;
-
+    --card-background-color: #F9F9F9;
+    --card-price: #FCAA72;
+    --card-shadow: #EAEAEA;
     /* font */
     --menu-font-size: 1.5rem;
     --category-font-size: 2.25rem;
@@ -67,12 +69,69 @@ a {
     color: var(--main-color);
     transition: 0.3s;
 }
-h3 {
+.card-group {
+    width: 1520px;
+    font-weight: 520;
     text-align: center;
-    text-decoration: underline;
-    text-decoration-color: var(--main-color);
-    text-decoration-thickness: 3px;
+    margin-bottom: 2.4rem;
 }
+.card-group:after {
+    content: "";
+    display: block;
+    width: 24px;
+    border-bottom: 3px solid var(--main-color);
+    margin: 10px auto;
+}
+
+/* card ~! */
+main {
+    display: flex;
+    column-gap: 2rem;
+    margin-left: 6rem;
+    margin-right: 6rem;
+}
+.main-card {
+    /* width: 1520px; */
+}
+
+.card {
+    overflow: hidden;
+    width: 19rem;
+    height: 30rem;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 2px 2px 2px 2px var(--card-shadow);
+    background-color: var(--card-background-color);
+}
+.card-description {
+    text-align: center;
+}
+.card-menu, .card-explanation, .card-price {
+    margin-top: 2rem;
+}
+
+.card-price {
+    font-size: 1.4rem;
+    color: var(--card-price);
+    font-weight: bold;
+}
+
+figure {
+    background-image: url('/img/first-card-food\(1\).png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    height: 240px;
+}
+
+.card-btn {
+    width: 1410px;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.4rem;
+    margin-right: 6.6rem;
+    column-gap: 2rem;
+}
+
 
 /* 반응형 */
 @media screen and (max-width: 1140px) {
