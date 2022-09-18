@@ -10,6 +10,8 @@
     --card-background-color: #F9F9F9;
     --card-price: #FCAA72;
     --card-shadow: #EAEAEA;
+    --footer-color: #f6f6f6;
+    --footer-text-color: #4A4A4A;
     /* font */
     --menu-font-size: 1.5rem;
     --category-font-size: 2.25rem;
@@ -90,9 +92,6 @@ main {
     margin-left: 6rem;
     margin-right: 6rem;
 }
-.main-card {
-    /* width: 1520px; */
-}
 
 .card {
     overflow: hidden;
@@ -122,6 +121,10 @@ figure {
     background-size: contain;
     height: 240px;
 }
+/* 음식사진 */
+.third-group>.card:nth-child(1)>figure{
+    background-image: url('/img/third-card-food\(1\).png');
+}
 
 .card-btn {
     width: 1410px;
@@ -130,8 +133,43 @@ figure {
     margin-top: 1.4rem;
     margin-right: 6.6rem;
     column-gap: 2rem;
+    margin-bottom: 4rem;
 }
 
+.details {
+    margin-right: 7.5rem;
+    margin-top: 7.875rem;
+}
+
+.details>p {
+    text-align: right;
+}
+
+footer {
+    margin-top: 11rem;
+    background-color: var(--footer-color);
+    height: 9.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+footer>ul {
+    list-style: none;
+    display: flex;
+}
+
+footer>ul>li {
+    font-size: 0.8rem;
+    color: var(--footer-text-color);
+}
+footer>ul>li::after {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    content: "ㅣ";
+    color: var(--footer-text-color);
+
+}
 
 /* 반응형 */
 @media screen and (max-width: 1140px) {
@@ -143,7 +181,7 @@ figure {
         overflow: hidden;
         height: 0;
     }
-    ul>li {
+    .nav-menu>ul>li {
         margin-top: 10px;
         display: flex;
         justify-content: center;
