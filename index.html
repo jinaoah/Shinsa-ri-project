@@ -4,19 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/mainPage.css">
+    <link rel="stylesheet" href="css/main.css">
     <title>Document</title>
 </head>
 <body>
     <div class="grid-container">
         <header>
-            <img src="img/logo.png" alt="" class="logo">
-            <ul>
-                <li class="header-introduction">소개</li>
-                <li class="header-menu">메뉴</li>
-                <li class="header-review">리뷰</li>
-                <li class="header-directions">오시는 길</li>
-            </ul>
+            <img src="img/logo.png" onclick="location.href='index.html'" class="logo">
+            <div class="nav-menu">
+                <ul class="nav-list" id="nav-list">
+                    <li class="nav-item">
+                        <a href="" class="nav-link">소개</a></li>
+                    <li class="nav-item">
+                        <a href="menu.html" class="nav-link">메뉴</a></li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">리뷰</a></li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">오시는 길</a></li>
+                </ul>
+            </div>
+            <!-- <div class="nav-toggle" id="nav-toggle">
+                <i class='bx bx-menu bx-lg'></i>
+            </div> -->
         </header>
 
         <div class="storeImg-container">가게 이미지</div>
