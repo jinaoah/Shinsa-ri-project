@@ -5,15 +5,9 @@ window.addEventListener('scroll', () => {
 
 });
 
-let firstSection = document.querySelector('.first-group');
-let secondSection = document.querySelector('.second-group');
-let thirdSection = document.querySelector('.third-group');
+const logoBtn = document.querySelector('.logo');
 
-console.log(firstSection)
-console.log(secondSection)
-console.log(thirdSection)
-
-$(window).on("wheel", function(e) {
+const homeBtn = function (logoBtn) {
     
 }
 

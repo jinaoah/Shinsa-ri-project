@@ -22,6 +22,7 @@
 
 body {
     font-family: var(--body-font);
+    margin: 0;
 }
 
 .grid-container {
@@ -31,6 +32,7 @@ body {
 
 /* 헤더  */
 header {
+    margin-top: 1rem;
     display: flex;
     align-items: center;
 }
@@ -52,10 +54,11 @@ a {
 }
 
 .logo {
-    margin-left: 1rem;
+    cursor: pointer;
+    margin-left: 2rem;
     height: 5rem;
     width: 11.563rem;
-    margin-right: 14rem;
+    margin-right: 25rem;
 }
 
 .nav-toggle {
@@ -72,10 +75,9 @@ a {
     transition: 0.3s;
 }
 .card-group {
-    width: 1520px;
-    font-weight: 520;
     text-align: center;
     margin-bottom: 2.4rem;
+    margin-top: 2.4rem;
 }
 .card-group:after {
     content: "";
@@ -87,14 +89,15 @@ a {
 
 /* card ~! */
 main {
+    justify-content: flex-start;
     display: flex;
+    /* flex-wrap: wrap; */
     column-gap: 2rem;
-    margin-left: 6rem;
-    margin-right: 6rem;
+    margin-left: 8rem;
+    row-gap: 2rem;
 }
 
 .card {
-    overflow: hidden;
     width: 19rem;
     height: 30rem;
     border-radius: 20px 20px 20px 20px;
@@ -124,6 +127,13 @@ figure {
 /* 음식사진 */
 .third-group>.card:nth-child(1)>figure{
     background-image: url('/img/third-card-food\(1\).png');
+}
+
+.first-group>.card:nth-child(3)>figure {
+    height: 240px;
+    width: 240px;
+    background-image: url('/img/first-card-food\(3\).png');
+
 }
 
 .card-btn {
@@ -172,36 +182,13 @@ footer>ul>li::after {
 }
 
 /* 반응형 */
-@media screen and (max-width: 1140px) {
-    header, .nav-menu>ul {
-        display: block;
+@media screen and (max-width: 1536px) { /*노트북*/
+    .logo {
+        margin-right: 13.3rem;
     }
-    .nav-list {
-        transition: 0.3s;
-        overflow: hidden;
-        height: 0;
-    }
-    .nav-menu>ul>li {
-        margin-top: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .nav-menu {
-        right: 120px;
-        position: fixed;
-    }
-    
-    .nav-toggle {
-        display: contents;
-    }
-    .bx-menu {
-        cursor: pointer;
-        position: fixed;
-        top: 20px;
-        right: 20px;
-    }
-    .show-menu {
-        height: 754px;
+
+    .card-group {
+        width: 1536px;
+        text-align: center;
     }
 }
