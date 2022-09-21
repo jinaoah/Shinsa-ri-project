@@ -108,11 +108,19 @@ main {
     box-shadow: 2px 2px 2px 2px var(--card-shadow);
     background-color: var(--card-background-color);
 }
+
 .card-description {
     text-align: center;
 }
-.card-menu, .card-explanation, .card-price {
+.card-menu, .card-explanation {
     margin-top: 2rem;
+}
+
+.card-explanation {
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .card-price {
@@ -147,7 +155,9 @@ figure {
     background-image: url('/img/food/김치전.png');
 }
 
-.second-group>.card:nth-child(3)>.card-image { 
+.second-group>.card:nth-child(4)>.card-image { 
+    background-size: 250px;
+    background-image: url('/img/food/녹두전.png');
 }
 
 /* 안주류 */
