@@ -6,11 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/30d76d812b.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
     <div class="grid-container">
         <header>
             <img src="img/logo.png" onclick="location.href='index.html'" class="logo">
+            <a href="#" class="toggle">
+                <i class="fa-solid fa-bars fa-2x"></i>
+            </a>
             <div class="nav-menu">
                 <ul class="nav-list" id="nav-list">
                     <li class="nav-item">
@@ -23,24 +28,67 @@
                         <a href="" class="nav-link">오시는 길</a></li>
                 </ul>
             </div>
-            <!-- <div class="nav-toggle" id="nav-toggle">
-                <i class='bx bx-menu bx-lg'></i>
-            </div> -->
         </header>
-
-        <div class="storeImg-container">가게 이미지</div>
-        <div class="introduction-container">
-            <h2>소개</h2>
-            <div>저희 이모네 전 칼국수는 오랫동안 신원시장에 자리잡아 많은 분들께 사랑받아온 칼국수집입니다. 
-            그만큼 손님 한 분 한 분께, 따뜻한 한 끼를 대접하기 위해 노력하고 있습니다. 
-            많은 분들의 사랑에 보답하고자하는 마음으로 현재 좋은 가격에 좋은 음식을 판매하고 있습니다. 
-            앞으로도 좋은 재료, 좋은 가격, 좋은 품질의 음식을 판매하기 위해 노력하겠습니다. 감사합니다. 
+        
+        <div class="img-container">
+            <img class="slide" src="/img/home.jpg" alt="">
+            <div class="container">
+                <h1>이모네 전 칼국수</h1>
+                <div class="text">가족의 마음으로 정성을 담아 요리하는 전 칼국수집입니다.</div>
             </div>
         </div>
-        <div class="bestMenu-container">추천 메뉴</div>
+        
+        <h2 class="section">소개</h2>
+        <div class="introduction-container">
+            <article class="card">
+                <figure class="card-image"></figure>
+                <div class="card-description">
+                    <h3 class="card-title">따뜻한 마음</h3>
+                    <p class="card-explanation">가족의 마음으로 조리</p>
+                </div>
+            </article>
+            <article class="card">
+                <figure class="card-image"></figure>
+                <div class="card-description">
+                    <h3 class="card-title">건강하고 맛있는 한 끼</h3>
+                    <p class="card-explanation">집밥처럼 영양가있고 편안한 한 끼</p>
+                </div>
+            </article>
+            <article class="card">
+                <figure class="card-image"></figure>
+                <div class="card-description">
+                    <h3 class="card-title">착한 가격</h3>
+                    <p class="card-explanation">착한 가격으로 늘 배부르게</p>
+                </div>
+            </article>
+            <!-- <div>저희 이모네 전 칼국수는 오랫동안 신원시장에 자리잡아 많은 분들께 사랑받아온 칼국수집입니다. 
+            그만큼 손님 한 분 한 분께, 따뜻한 한 끼를 대접하기 위해 노력하고 있습니다. 
+            많은 분들의 사랑에 보답하고자하는 마음으로 현재 좋은 가격에 좋은 음식을 판매하고 있습니다. 
+            앞으로도 좋은 재료, 좋은 가격, 좋은 품질의 음식을 판매하기 위해 노력하겠습니다. 감사합니다.  -->
+            </div>
+
+            <h2 class="section">추천 메뉴</h2>
+            <div class="bestMenu-container">
+                <article class="circle">
+                    <figure class="circle-image"></figure>
+                    <p class="circle-menu">칼국수</p>
+                </article>
+                <article class="circle">
+                    <figure class="circle-image"></figure>
+                    <p class="circle-menu">칼제비</p>
+                </article>
+                <article class="circle">
+                    <figure class="circle-image"></figure>
+                    <p class="circle-menu">오징어볶음</p>
+                </article>
+            </div>
+        </div>
+        <!-- <div class="bestMenu-container">추천 메뉴</div>
         <div class="directions-container">오시는 길</div>
     
-        <footer>footer</footer>
+        <footer>footer</footer> -->
     </div>
+
+    <script src="js/main.js"></script>
 </body>
 </html>

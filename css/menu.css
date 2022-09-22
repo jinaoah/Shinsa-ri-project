@@ -23,7 +23,7 @@
 body {
     font-family: var(--body-font);
     margin: 0;
-    overflow-x: hidden
+    overflow-x: hidden;
 }
 
 .grid-container {
@@ -255,7 +255,7 @@ figure {
     display: flex;
     justify-content: center;
     text-align: center;
-    width: 1920px;
+    width: 1740px;
 }
 
 /* 푸터 footer */

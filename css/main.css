@@ -22,11 +22,13 @@
 
 body {
     font-family: var(--body-font);
+    /* overflow-x: hidden; */
     margin: 0;
 }
 
 .grid-container {
     display: grid;
+    margin: 0;
 }
 
 /* 헤더  */
@@ -60,18 +62,179 @@ a {
     margin-right: 25rem;
 }
 
-.nav-toggle {
+.toggle {
     display: none;
-}
-
-.nav-link {
-    display: block;
 }
 
 /* nav hover */
 .nav-link:hover {
     color: var(--main-color);
     transition: 0.3s;
+}
+
+/* 메인 */
+
+h1, .text {
+    text-align: center;
+    width: 100%;
+    transform: translateY(-300px);
+}
+
+.slide {
+    /* margin-top: 2rem; */
+    opacity: 0.5;
+    width: 100%;
+    height: 500px;
+}
+
+.section {
+    text-align: center;
+    margin-top: 8rem;
+}
+
+.section::after {
+    content: "";
+    display: block;
+    width: 24px;
+    border-bottom: 3px solid var(--main-color);
+    margin: 10px auto;
+}
+
+.introduction-container {
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    text-align: center;
+}
+.card-description {
+    padding-top: 2rem;
+    text-align: center;
+}
+.card-image {
+    box-shadow: 4px 4px 4px 4px var(--card-shadow);
+    border-radius: 200px;
+    width: 274px;
+    height: 274px;
+    background-repeat: no-repeat;
+    text-align: center;
+    background-position: center;
+    background-size: 108px;
+}
+
+.card:nth-child(1)>figure {
+    background-image: url('/img/icon/3021873\ 1.png');
+}
+.card:nth-child(2)>figure {
+    background-image: url('/img/icon/2836619.png');
+}
+.card:nth-child(3)>figure {
+    background-image: url('/img/icon/2224577\ 1.png');
+}
+
+.bestMenu-container {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle:nth-child(1)>.circle-image {
+    width: 380px;
+    height: 380px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('/img/food/칼국수.png');
+}
+.circle:nth-child(2)>.circle-image {
+    width: 380px;
+    height: 380px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('/img/food/칼제비.png');
+}
+.circle:nth-child(3)>.circle-image {
+    width: 380px;
+    height: 380px;
+    background-size: 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('/img/food/오징어볶음.png');
+}
+.circle-menu {
+    text-align: center;
+}
+.circle {
+    gap: 2rem;
+}
+
+/* 모바일 반응형 */
+@media (max-width: 390px) {
+    /* 반응형 헤더, 햄버거 메뉴 */
+    header {
+        flex-direction: column;
+        display: flex;
+        align-items: flex-end;
+    }
+    .nav-menu {
+        max-width: 390px;
+        width: 0;
+        display: none;
+        border-left: 2px solid var(--card-shadow);
+    }
+    .nav-menu.active {
+        margin-right: -20px;
+        display: flex;
+        width: 300px;
+        height: 700px;
+    }
+    .nav-menu>ul>li {
+        text-align: end;
+        /* margin-top: 1.5rem; */
+        padding-right: 2rem;
+    }
+    .nav-menu>ul>li:nth-child(1){
+        margin-top: 4.5rem;
+    }
+    .nav-menu>ul>li:nth-child(4){
+        margin-bottom: 4.5rem;
+    }
+    .nav-menu>ul {
+        margin-top: -1rem;
+        justify-content: center;
+        background-color: #fff;
+        padding: 0;
+        width: 280px;
+        gap: 2rem;
+        flex-direction: column;
+        display: flex;
+        /* align-items: flex-end; */
+    }
+    .logo {
+        position: absolute;
+        left: 16px;
+        width: 5rem;
+        height: auto;
+        margin-right: 0rem;
+        margin-left: 0rem !important;
+    }
+    .toggle {
+        position: fixed;
+        display: flex;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+    .toggle>i {
+        width: 36px;
+    }
+    a { /*소개, 메뉴, 리뷰, 오시는 길*/
+        font-size: 16px;
+        gap: 0;
+    }
 }
 
 /* 노트북 반응형 */
