@@ -20,11 +20,10 @@
     --body-font: 'Nanum Gothic';
 }
 
-
-
 body {
     font-family: var(--body-font);
     margin: 0;
+    overflow-x: hidden
 }
 
 .grid-container {
@@ -63,12 +62,8 @@ a {
     margin-right: 25rem;
 }
 
-.nav-toggle {
+.toggle {
     display: none;
-}
-
-.nav-link {
-    display: block;
 }
 
 /* nav hover */
@@ -79,6 +74,7 @@ a {
 
 /* main card 메인 */
 .card-group {
+    width: 1984px;
     text-align: center;
     margin-bottom: 2.4rem;
     margin-top: 2.4rem;
@@ -92,16 +88,23 @@ a {
 }
 
 /* card ~! */
+.group {
+    margin-top: 4rem;
+}
+
 main {
     justify-content: flex-start;
     display: flex;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     column-gap: 2rem;
     margin-left: 8rem;
+    margin-bottom: 4rem;
     row-gap: 2rem;
 }
 
 .card {
+    margin-top: 2rem;
+    transition: 0.5s;
     width: 19rem;
     height: 30rem;
     border-radius: 20px 20px 20px 20px;
@@ -142,14 +145,46 @@ figure {
     transition-duration: 0.8s;
 }
 
+/* 카드 hover */
+.card-explanation {
+    opacity: 0;
+}
+
+.card:hover .card-explanation {
+    transition: 0.5s;
+    opacity: 0.5;
+    color: var(--footer-text-color);
+}
+.card:hover{
+    transition: 0.7s;
+    transform: translateY(-50px);
+    background-color: #fff;
+}
+
 /* 음식사진 */
+.first-group>.card:nth-child(2)>figure {
+    background-size: 210px;
+    background-image: url('/img/food/수제비.png');
+}
 
 .first-group>.card:nth-child(3)>figure {
     background-image: url('/img/food/칼제비.png');
-
+}
+.first-group>.card:nth-child(4)>figure {
+    background-size: 390px;
+    background-image: url('/img/food/만둣국.png');
+}
+.first-group>.card:nth-child(5)>figure {
+    background-size: 220px;
+    background-image: url('/img/food/떡만둣국\ \(2\).png');
 }
 
 /* 전류 */
+.second-group>.card:nth-child(1)>.card-image {
+    background-size: 250px;
+    background-image: url('/img/food/두부전.jpg');
+}
+
 .second-group>.card:nth-child(2)>.card-image {
     background-size: 280px;
     background-image: url('/img/food/김치전.png');
@@ -167,6 +202,12 @@ figure {
 }
 .third-group>.card:nth-child(2)>.card-image {
     background-image: url('/img/food/제육볶음.png'); /*바꾸기*/
+}
+.third-group>.card:nth-child(3)>.card-image {
+    background-image: url('/img/food/김치찌개.png');
+}
+.third-group>.card:nth-child(4)>.card-image {
+    background-image: url('/img/food/동태탕.png');
 }
 .third-group>.card:nth-child(5)>.card-image {
     background-image: url('/img/food/third-card-food\(5\).png');
@@ -191,16 +232,6 @@ figure {
     background-image: url('/img/food/drink.png');
 }
 
-.card-btn {
-    width: 1410px;
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 1.4rem;
-    margin-right: 6.6rem;
-    column-gap: 2rem;
-    margin-bottom: 4rem;
-}
-
 .details {
     margin-right: 7.5rem;
     margin-top: 7.875rem;
@@ -208,6 +239,23 @@ figure {
 
 .details>p {
     text-align: right;
+}
+
+#down > img {
+    width: 36px;
+}
+
+#down:hover {
+    transition: 1s;
+    transform: translateY(10px);
+}
+
+#down {
+    transition: 0.7s;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 1920px;
 }
 
 /* 푸터 footer */
@@ -242,6 +290,11 @@ footer>ul>li:last-child::after {
 
 /* 반응형 */
 @media screen and (max-width: 1536px) { /*노트북*/
+    #down {
+        width: 1536px;
+        text-align: center;
+    }
+
     .logo {
         margin-right: 13.3rem;
     }
@@ -249,5 +302,169 @@ footer>ul>li:last-child::after {
     .card-group {
         width: 1536px;
         text-align: center;
+    }
+
+    .group:nth-child(2)>.card-btn {
+        visibility: visible;
+    }
+    
+    .card-btn {
+        width: 1400px;
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 1.4rem;
+        /* margin-right: 22rem; */
+        column-gap: 2rem;
+        margin-bottom: 4rem;
+    }
+
+    main{
+        margin-left: 7rem;
+        width: 1340px;
+        overflow: hidden;
+        scroll-snap-type: x mandatory; /* 달라붙는 스냅 속성 부여 */
+        overflow-y: hidden;
+    }
+}
+
+/* 핸드폰 */
+@media (max-width: 390px) {
+/* 반응형 헤더, 햄버거 메뉴 */
+    header {
+        flex-direction: column;
+        display: flex;
+        align-items: flex-end;
+    }
+    .nav-menu {
+        max-width: 390px;
+        width: 0;
+        display: none;
+        border-left: 2px solid var(--card-shadow);
+    }
+    .nav-menu.active {
+        margin-right: -20px;
+        display: flex;
+        width: 300px;
+        height: 700px;
+    }
+    .nav-menu>ul>li {
+        text-align: end;
+        /* margin-top: 1.5rem; */
+        padding-right: 2rem;
+    }
+    .nav-menu>ul>li:nth-child(1){
+        margin-top: 4.5rem;
+    }
+    .nav-menu>ul>li:nth-child(4){
+        margin-bottom: 4.5rem;
+    }
+    .nav-menu>ul {
+        margin-top: -1rem;
+        justify-content: center;
+        background-color: #fff;
+        padding: 0;
+        width: 280px;
+        gap: 2rem;
+        flex-direction: column;
+        display: flex;
+        /* align-items: flex-end; */
+    }
+    .logo {
+        position: absolute;
+        left: 16px;
+        width: 5rem;
+        height: auto;
+        margin-right: 0rem;
+        margin-left: 0rem !important;
+    }
+    .toggle {
+        position: fixed;
+        display: flex;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+    .toggle>i {
+        width: 36px;
+    }
+    a { /*소개, 메뉴, 리뷰, 오시는 길*/
+        font-size: 16px;
+        gap: 0;
+    }
+
+/* 모바일 화면에 맞게 크기 조절 */
+    .group, .card-group, main {
+        max-width: 390px;
+    }
+    .card-group {
+        margin-bottom: 1rem;
+    }
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 0.5rem;
+        margin-left: 1rem !important;
+        margin: 0;
+        margin-bottom: 2rem;
+    }
+    .card {
+        margin-right: 0;
+        pointer-events: none;
+        height: 240px;
+        width: 160px;
+    }
+    .card-menu, 
+    .card-explanation, 
+    .card-price {
+        opacity: 1;
+        margin: 0;
+        font-size: smaller;
+        margin-bottom: 10px;
+    }
+    
+    .card-image, figure {
+        margin: 0;
+        margin-left: 1.8rem !important;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        height: 100px;
+        width: 100px;
+        background-size: 100px;
+    }
+    .first-group>.card:nth-child(2)>.card-image,
+    .third-group>.card:nth-child(1)>.card-image {
+        background-size: 90px;
+    }
+    .first-group>.card:nth-child(4)>.card-image {
+        background-size: 160px;
+    }
+    .second-group>.card:nth-child(1)>.card-image,
+    .second-group>.card:nth-child(2)>.card-image,
+    .second-group>.card:nth-child(4)>.card-image {
+        background-size: 100px;
+    }
+    .last-group>.card:nth-child(1)>.card-image{
+        background-size: 100px;
+    }
+    .last-group>.card:nth-child(2)>.card-image {
+        background-size: 30px;
+    }
+    .last-group>.card:nth-child(3)>.card-image {
+        background-size: 40px;
+    }
+    .last-group>.card:nth-child(4)>.card-image {
+        background-size: 140px;
+    }
+    #down {
+        display: none;
+    }
+    .details {
+        margin: 0;
+        /* margin-right: 1rem; */
+        font-size: smaller;
+    }
+    footer {
+        font-size: small;
+        display: none;
     }
 }

@@ -10,6 +10,9 @@
 
 //스크롤 시 섹션 이동
 //스크롤 시 섹션 이동
+
+// https://swiperjs.com/demos#pagination !********!!!!!!!!
+
 window.onload = function(){
     const elm = document.querySelectorAll('.group');
     const elmCount = elm.length;
@@ -51,3 +54,17 @@ window.onload = function(){
       });
     });
   }
+
+//햄버거 메뉴
+const toggleBtn = document.querySelector('.toggle');
+const menu = document.querySelector('.nav-menu');
+const toggleIcon = document.getElementsByTagName("i")[0];
+
+console.log(toggleIcon)
+
+toggleBtn.addEventListener('click', () => {
+  menu.classList.toggle('active');
+  toggleIcon.classList.toggle("fa-bars");
+  toggleIcon.classList.toggle("fa-x");
+
+});
