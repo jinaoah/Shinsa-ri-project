@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="css/map.css">
+    <!-- boxicon -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="grid-container">
+        <!-- header -->
+        <header>
+            <img src="img/logo.png" alt="" class="logo">
+            <div class="nav-menu">
+                <ul class="nav-list" id="nac-list">
+                    <li class="nav-item">
+                        <a href="" class="nav-link">소개</a></li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">메뉴</a></li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">리뷰</a></li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">오시는 길</a></li>
+                </ul>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <i class='bx bx-menu bx-lg'></i>
+            </div>
+        </header>
+
+        <h3 class="card-group">오시는 길</h3>
+    </div> 
+
+    <div id="daumRoughmapContainer1663872595539" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+
+    <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+    <script charset="UTF-8">
+        new daum.roughmap.Lander({
+            "timestamp" : "1663872595539",
+            "key" : "2bsy4",
+            "mapWidth" : "1100",
+            "mapHeight" : "360"
+        }).render();
+    </script>
+
+    <div class="address-wrapper">
+        <i class='bx bxs-map'></i>
+        <div class="address">
+            <p>서울 관악구 관천로 27-1 (우)08774</p>
+            <p>지번  |  신림동 1587-27</p>
+        </div>
+    </div>
+
+    <footer>
+        <ul>
+            <li>가게 소개</li>
+            <li>이용약관</li>
+            <li>개인정보처리방침</li>
+            <li>이용안내</li>
+            <li>광고/제휴 문의</li>
+        </ul>
+    </footer>
+
+</body>
+</html>
