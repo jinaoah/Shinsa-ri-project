@@ -1,0 +1,194 @@
+/* Font */
+@import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+.nanumgothic * {
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+:root {
+    --main-color: #FCAA72;
+    --card-background-color: #F9F9F9;
+    --card-price: #FCAA72;
+    --card-shadow: #EAEAEA;
+    --footer-color: #f6f6f6;
+    --footer-text-color: #4A4A4A;
+    /* font */
+    --menu-font-size: 1.5rem;
+    --category-font-size: 2.25rem;
+    /* --category-font-weight: ; */
+    --text-color: #000;  
+    --body-font: 'Nanum Gothic';
+}
+
+body {
+    font-family: var(--body-font);
+    margin: 0;
+}
+
+.grid-container {
+    display: grid;
+    margin: 0;
+}
+
+/* 헤더  */
+header {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu>ul {
+    list-style: none;
+    display: flex;
+    gap: 9.5rem;
+}
+
+ul>li {
+    font-size: 20px;
+}
+
+a {
+    font-weight: 500;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.logo {
+    cursor: pointer;
+    margin-left: 2rem;
+    height: 5rem;
+    width: 11.563rem;
+    margin-right: 25rem;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+.nav-link {
+    display: block;
+}
+
+/* nav hover */
+.nav-link:hover {
+    color: var(--main-color);
+    transition: 0.3s;
+}
+.card-group {
+    text-align: center;
+    margin-bottom: 2.4rem;
+    margin-top: 2.4rem;
+}
+.card-group:after {
+    content: "";
+    display: block;
+    width: 24px;
+    border-bottom: 3px solid var(--main-color);
+    margin: 10px auto;
+}
+
+/* card ~! */
+main {
+    justify-content: flex-start;
+    display: flex;
+    /* flex-wrap: wrap; */
+    column-gap: 2rem;
+    margin-left: 8rem;
+    row-gap: 2rem;
+}
+
+.card {
+    width: 19rem;
+    height: 30rem;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 2px 2px 2px 2px var(--card-shadow);
+    background-color: var(--card-background-color);
+}
+.card-description {
+    text-align: center;
+}
+.card-menu, .card-explanation, .card-price {
+    margin-top: 2rem;
+}
+
+.card-price {
+    font-size: 1.4rem;
+    color: var(--card-price);
+    font-weight: bold;
+}
+
+figure {
+    background-image: url('/img/first-card-food\(1\).png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    height: 240px;
+}
+/* 음식사진 */
+.third-group>.card:nth-child(1)>figure{
+    background-image: url('/img/third-card-food\(1\).png');
+}
+
+.first-group>.card:nth-child(3)>figure {
+    height: 240px;
+    width: 240px;
+    background-image: url('/img/first-card-food\(3\).png');
+
+}
+
+.card-btn {
+    width: 1410px;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.4rem;
+    margin-right: 6.6rem;
+    column-gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.details {
+    margin-right: 7.5rem;
+    margin-top: 7.875rem;
+}
+
+.details>p {
+    text-align: right;
+}
+
+footer {
+    margin-top: 11rem;
+    background-color: var(--footer-color);
+    height: 9.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+footer>ul {
+    list-style: none;
+    display: flex;
+}
+
+footer>ul>li {
+    font-size: 0.8rem;
+    color: var(--footer-text-color);
+}
+footer>ul>li::after {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    content: "ㅣ";
+    color: var(--footer-text-color);
+
+}
+
+/* 반응형 */
+@media screen and (max-width: 1536px) { /*노트북*/
+    .logo {
+        margin-right: 13.3rem;
+    }
+
+    .card-group {
+        width: 1536px;
+        text-align: center;
+    }
+}

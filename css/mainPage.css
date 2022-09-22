@@ -1,0 +1,66 @@
+:root {
+    --main-color: #FCAA72;
+}
+
+/*그리드 레이아웃*/
+.grid-container {
+    display: grid;
+    grid-template-rows: 9rem 28rem 60.125rem 48.25rem 63.625rem 11.75rem;
+    grid-template-columns: 8.75rem 1fr 8.75rem;
+    margin: 0;
+}
+header {
+    padding: 20px;
+    grid-column-start: span 4;
+}
+/* div { 
+    border: 5px solid black;
+} */
+.storeImg-container { /*가게 이미지*/
+    grid-column-start: span 4; 
+    border: 5px solid black;
+}
+.introduction-container {
+    /* margin-top: 8.125rem; */
+    grid-column-start: 2;
+    grid-row-start: 3;
+}
+.bestMenu-container {
+    grid-column-start: 2;
+    /* margin-top: 8.5rem; */
+    border: 5px solid black;
+}
+.directions-container {
+    grid-column-start: 2;
+    /* margin-top: 12rem; */
+    border: 5px solid black;
+}
+footer {
+    border: 5px solid black;
+    grid-column-start: span 3;
+    padding: 20px;
+    /* margin-top: 28.75rem; */
+}
+
+/* 헤더 */
+header{
+    display: flex;
+}
+
+header > ul{
+    list-style: none;
+    justify-content: left;
+}
+ul>li {
+    float: left;
+    margin-right: 9.5rem;
+    margin-top: 1rem;
+    font-size: 20px;
+}
+.logo {
+    height: 5.25rem;
+    width: 11.563rem;
+    margin-right: 15.375rem;
+}
+
+/* 소개 */
