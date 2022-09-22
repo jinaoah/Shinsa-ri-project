@@ -415,7 +415,62 @@ footer>ul>li:last-child::after {
     font-size: large;
 }
 
-@media screen and (max-width: 1140px) {
+@media screen and (max-width: 1200px) {
+    header, .nav-menu>ul {
+        display: block;
+    }
+    .nav-list {
+        transition: 0.3s;
+        overflow: hidden;
+        height: 0;
+    }
+    .nav-menu>ul>li {
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav-menu {
+        right: 120px;
+        position: fixed;
+    }
+    
+    .nav-toggle {
+        display: contents;
+    }
+    .bx-menu {
+        cursor: pointer;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+    }
+    .show-menu {
+        height: 754px;
+    }
+
+    .ratings, .card {
+        width: 850px;
+    }
+
+    .more {
+        margin-right: 20%;
+    }
+
+    .review-img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .review-img1 {
+        margin-top: -35px;
+    }
+
+    .review-img2, .review-img3 {
+        margin-top: -80px;
+    }
+}
+
+@media screen and (max-width: 390px) {
     header, .nav-menu>ul {
         display: block;
     }
