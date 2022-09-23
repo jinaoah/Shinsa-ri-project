@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/30d76d812b.js" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="grid-container">
+        <header>
+            <img src="img/logo.png" onclick="location.href='index.html'" class="logo">
+            <a href="#" class="toggle">
+                <i class="fa-solid fa-bars fa-2x"></i>
+            </a>
+            <div class="nav-menu">
+                <ul class="nav-list" id="nav-list">
+                    <li class="nav-item">
+                        <a href="#section1" class="nav-link">소개</a></li>
+                    <li class="nav-item">
+                        <a href="menu.html" class="nav-link">메뉴</a></li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">리뷰</a></li>
+                    <li class="nav-item">
+                        <a href="#section3" class="nav-link">오시는 길</a></li>
+                </ul>
+            </div>
+        </header>
+        
+        <div class="img-container">
+            <img class="slide" src="/img/home.jpg" alt="">
+            <div class="container">
+                <h1>이모네 전 칼국수</h1>
+                <div class="text">가족의 마음으로 정성을 담아 요리하는 전 칼국수집입니다.</div>
+            </div>
+        </div>
+        
+        <h2 class="section" id="section1">소개</h2>
+        <div class="box-image">
+            <figure class="section-image"></figure>
+        </div>
+            <div class="section-text">이모네 전 칼국수는 신림동 신원시장 안에 위치하여 식사 후 다양한 먹거리를 즐길 수 있습니다. <br>
+            저희 가게를 찾아오면서 시장만의 사람 사는 정, 흥정하는 재미와 후한 인심을 경험할 수 있습니다.</div>
+        <div class="introduction-container">
+            <article class="card">
+                <figure class="card-image"></figure>
+                <div class="card-description">
+                    <h3 class="card-title">따뜻한 마음</h3>
+                    <p class="card-explanation">가족의 마음으로 조리</p>
+                </div>
+            </article>
+            <article class="card">
+                <figure class="card-image"></figure>
+                <div class="card-description">
+                    <h3 class="card-title">건강하고 맛있는 한 끼</h3>
+                    <p class="card-explanation">집밥처럼 영양가있고 편안한 한 끼</p>
+                </div>
+            </article>
+            <article class="card">
+                <figure class="card-image"></figure>
+                <div class="card-description">
+                    <h3 class="card-title">착한 가격</h3>
+                    <p class="card-explanation">착한 가격으로 늘 배부르게</p>
+                </div>
+            </article>
+            <!-- <div>저희 이모네 전 칼국수는 오랫동안 신원시장에 자리잡아 많은 분들께 사랑받아온 칼국수집입니다. 
+            그만큼 손님 한 분 한 분께, 따뜻한 한 끼를 대접하기 위해 노력하고 있습니다. 
+            많은 분들의 사랑에 보답하고자하는 마음으로 현재 좋은 가격에 좋은 음식을 판매하고 있습니다. 
+            앞으로도 좋은 재료, 좋은 가격, 좋은 품질의 음식을 판매하기 위해 노력하겠습니다. 감사합니다.  -->
+            </div>
+
+            <h2 class="section">추천 메뉴</h2>
+            <div class="bestMenu-container">
+                <article class="circle">
+                    <figure class="circle-image"></figure>
+                    <p class="circle-menu">칼국수</p>
+                </article>
+                <article class="circle">
+                    <figure class="circle-image"></figure>
+                    <p class="circle-menu">칼제비</p>
+                </article>
+                <article class="circle">
+                    <figure class="circle-image"></figure>
+                    <p class="circle-menu">오징어볶음</p>
+                </article>
+            </div>
+        </div>
+    
+        <h2 id="section3">오시는 길</h2>
+        <div id="daumRoughmapContainer1663872595539" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+
+        <div class="address-wrapper">
+            <i class='bx bxs-map'></i>
+            <div class="address">
+                <!-- <img src="/img/icon/map-pin.svg"> -->
+                <p>서울 관악구 관천로 27-1 (우)08774</p>
+                <p>지번  |  신림동 1587-27</p>
+            </div>
+            <i class='bx bxs-phone-call'></i>
+            <div class="call">
+                <p>HP. 010-8770-3044</p>
+            </div>
+        </div>
+
+    <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+    <script charset="UTF-8">
+        new daum.roughmap.Lander({
+            "timestamp" : "1663872595539",
+            "key" : "2bsy4",
+            "mapWidth" : "1100",
+            "mapHeight" : "360"
+        }).render();
+    </script>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

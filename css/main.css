@@ -1,0 +1,324 @@
+/* Font */
+@import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+.nanumgothic * {
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+:root {
+    --main-color: #FCAA72;
+    --card-background-color: #F9F9F9;
+    --card-price: #FCAA72;
+    --card-shadow: #EAEAEA;
+    --footer-color: #f6f6f6;
+    --footer-text-color: #4A4A4A;
+    /* font */
+    --menu-font-size: 1.5rem;
+    --category-font-size: 2.25rem;
+    /* --category-font-weight: ; */
+    --text-color: #000;  
+    --body-font: 'Nanum Gothic';
+}
+
+body {
+    font-family: var(--body-font);
+    /* overflow-x: hidden; */
+    margin: 0;
+}
+
+.grid-container {
+    display: grid;
+    margin: 0;
+}
+
+/* 헤더  */
+header {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu>ul {
+    list-style: none;
+    display: flex;
+    gap: 9.5rem;
+}
+
+ul>li {
+    font-size: 20px;
+}
+
+a {
+    font-weight: 500;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.logo {
+    cursor: pointer;
+    margin-left: 2rem;
+    height: 5rem;
+    width: 11.563rem;
+    margin-right: 25rem;
+}
+
+.toggle {
+    display: none;
+}
+
+/* nav hover */
+.nav-link:hover {
+    color: var(--main-color);
+    transition: 0.3s;
+}
+
+/* 메인 */
+
+h1, .text {
+    text-align: center;
+    width: 100%;
+    transform: translateY(-300px);
+}
+
+.slide {
+    /* margin-top: 2rem; */
+    opacity: 0.5;
+    width: 100%;
+    height: 500px;
+}
+
+.section-text {
+    text-align: center;
+    line-height: 2rem;
+    margin-bottom: 6rem;
+    margin-top: 2rem;
+}
+
+.section-image {
+    background-image: url('/img/slide/slideImg3.png');
+    width: 640px;
+    height: 300px;
+    background-size: 500px;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    background-position: center;
+    background-color: #FCAA72;
+}
+
+.box-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section {
+    text-align: center;
+    margin-top: 8rem;
+}
+
+.section::after {
+    content: "";
+    display: block;
+    width: 24px;
+    border-bottom: 3px solid var(--main-color);
+    margin: 10px auto;
+}
+
+.introduction-container {
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    text-align: center;
+}
+.card-description {
+    padding-top: 2rem;
+    text-align: center;
+}
+.card-image {
+    box-shadow: 4px 4px 4px 4px var(--card-shadow);
+    border-radius: 200px;
+    width: 274px;
+    height: 274px;
+    background-repeat: no-repeat;
+    text-align: center;
+    background-position: center;
+    background-size: 108px;
+}
+
+.card:nth-child(1)>figure {
+    background-image: url('/img/icon/3021873\ 1.png');
+}
+.card:nth-child(2)>figure {
+    background-image: url('/img/icon/2836619.png');
+}
+.card:nth-child(3)>figure {
+    background-image: url('/img/icon/2224577\ 1.png');
+}
+
+.bestMenu-container {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle-image {
+    height: 380px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.circle:nth-child(1)>.circle-image {
+    /* width: 380px; */
+    
+    background-image: url('/img/food/칼국수.png');
+}
+.circle:nth-child(2)>.circle-image {
+    /* width: 380px; */
+    background-size: 320px;
+    background-image: url('/img/food/칼제비.png');
+}
+.circle:nth-child(3)>.circle-image {
+    /* width: 380px; */
+    background-size: 350px;
+    background-image: url('/img/food/오징어볶음.png');
+}
+.circle-menu {
+    text-align: center;
+}
+.circle {
+    width: 400px;
+}
+.section:nth-child(2) {
+    margin-bottom: 0;
+}
+
+/* 지도 */
+h2 {
+    text-align: center;
+    margin-top: 8rem;
+    margin-bottom: 2rem;
+}
+h2::after {
+    content: "";
+    display: block;
+    width: 24px;
+    border-bottom: 3px solid var(--main-color);
+    margin: 10px auto;
+}
+
+/* 내용 */
+.root_daum_roughmap {
+    margin: auto !important;
+    margin-top: 4rem;
+}
+.bxs-phone-call {
+    margin-left: 2rem;
+}
+
+.address-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2%;
+    margin-left: -5%;
+}
+
+.address-wrapper i {
+    font-size: 350%;
+    font-weight: 200;
+    margin-right: 10px;
+}
+
+.address {
+    font-size: 120%;
+}
+
+/* 반응형 */
+
+/* 모바일 반응형 */
+@media (max-width: 390px) {
+    /* 반응형 헤더, 햄버거 메뉴 */
+    header {
+        flex-direction: column;
+        display: flex;
+        align-items: flex-end;
+    }
+    .nav-menu {
+        max-width: 390px;
+        width: 0;
+        display: none;
+        border-left: 2px solid var(--card-shadow);
+    }
+    .nav-menu.active {
+        margin-right: -20px;
+        display: flex;
+        width: 300px;
+        height: 700px;
+    }
+    .nav-menu>ul>li {
+        text-align: end;
+        /* margin-top: 1.5rem; */
+        padding-right: 2rem;
+    }
+    .nav-menu>ul>li:nth-child(1){
+        margin-top: 4.5rem;
+    }
+    .nav-menu>ul>li:nth-child(4){
+        margin-bottom: 4.5rem;
+    }
+    .nav-menu>ul {
+        margin-top: -1rem;
+        justify-content: center;
+        background-color: #fff;
+        padding: 0;
+        width: 280px;
+        gap: 2rem;
+        flex-direction: column;
+        display: flex;
+        /* align-items: flex-end; */
+    }
+    .logo {
+        position: absolute;
+        left: 16px;
+        width: 5rem;
+        height: auto;
+        margin-right: 0rem;
+        margin-left: 0rem !important;
+    }
+    .toggle {
+        position: fixed;
+        display: flex;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+    .toggle>i {
+        width: 36px;
+    }
+    a { /*소개, 메뉴, 리뷰, 오시는 길*/
+        font-size: 16px;
+        gap: 0;
+    }
+}
+
+/* 노트북 반응형 */
+@media screen and (max-width: 1536px) { /*노트북*/
+    .logo {
+        margin-right: 13.3rem;
+    }
+
+    .card-group {
+        width: 1536px;
+        text-align: center;
+    }
+    .address-wrapper {
+        margin-left: -10%;
+        gap: 4rem;
+        margin-bottom: 4rem;
+    }
+
+}
