@@ -3,9 +3,11 @@ const toggleBtn = document.querySelector('.toggle');
 const menu = document.querySelector('.nav-menu');
 const toggleIcon = document.getElementsByTagName("i")[0];
 
-console.log(toggleIcon)
+console.log(toggleBtn.className)
 
-toggleBtn.addEventListener('click', () => {
+toggleBtn.addEventListener("click", () => {
+  console.log(toggleBtn)
+
   menu.classList.toggle('active');
   toggleIcon.classList.toggle("fa-bars");
   toggleIcon.classList.toggle("fa-x");

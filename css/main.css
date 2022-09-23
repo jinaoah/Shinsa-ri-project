@@ -87,6 +87,30 @@ h1, .text {
     height: 500px;
 }
 
+.section-text {
+    text-align: center;
+    line-height: 2rem;
+    margin-bottom: 6rem;
+    margin-top: 2rem;
+}
+
+.section-image {
+    background-image: url('/img/slide/slideImg3.png');
+    width: 640px;
+    height: 300px;
+    background-size: 500px;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    background-position: center;
+    background-color: #FCAA72;
+}
+
+.box-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .section {
     text-align: center;
     margin-top: 8rem;
@@ -141,35 +165,79 @@ h1, .text {
     justify-content: center;
     align-items: center;
 }
-
-.circle:nth-child(1)>.circle-image {
-    width: 380px;
+.circle-image {
     height: 380px;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+.circle:nth-child(1)>.circle-image {
+    /* width: 380px; */
+    
     background-image: url('/img/food/칼국수.png');
 }
 .circle:nth-child(2)>.circle-image {
-    width: 380px;
-    height: 380px;
-    background-position: center;
-    background-repeat: no-repeat;
+    /* width: 380px; */
+    background-size: 320px;
     background-image: url('/img/food/칼제비.png');
 }
 .circle:nth-child(3)>.circle-image {
-    width: 380px;
-    height: 380px;
+    /* width: 380px; */
     background-size: 350px;
-    background-position: center;
-    background-repeat: no-repeat;
     background-image: url('/img/food/오징어볶음.png');
 }
 .circle-menu {
     text-align: center;
 }
 .circle {
-    gap: 2rem;
+    width: 400px;
 }
+.section:nth-child(2) {
+    margin-bottom: 0;
+}
+
+/* 지도 */
+h2 {
+    text-align: center;
+    margin-top: 8rem;
+    margin-bottom: 2rem;
+}
+h2::after {
+    content: "";
+    display: block;
+    width: 24px;
+    border-bottom: 3px solid var(--main-color);
+    margin: 10px auto;
+}
+
+/* 내용 */
+.root_daum_roughmap {
+    margin: auto !important;
+    margin-top: 4rem;
+}
+.bxs-phone-call {
+    margin-left: 2rem;
+}
+
+.address-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2%;
+    margin-left: -5%;
+}
+
+.address-wrapper i {
+    font-size: 350%;
+    font-weight: 200;
+    margin-right: 10px;
+}
+
+.address {
+    font-size: 120%;
+}
+
+/* 반응형 */
 
 /* 모바일 반응형 */
 @media (max-width: 390px) {
@@ -247,4 +315,10 @@ h1, .text {
         width: 1536px;
         text-align: center;
     }
+    .address-wrapper {
+        margin-left: -10%;
+        gap: 4rem;
+        margin-bottom: 4rem;
+    }
+
 }
