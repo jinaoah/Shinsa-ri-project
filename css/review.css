@@ -22,6 +22,7 @@
 body {
     font-family: var(--body-font);
     margin:0;
+    padding-bottom: 2%;
 }
 
 .grid-container {
@@ -98,7 +99,7 @@ a {
 }
 
 /* footer */
-footer {
+/* footer {
     margin-top: 11rem;
     background-color: var(--footer-color);
     height: 9.4rem;
@@ -126,12 +127,13 @@ footer>ul>li::after {
 
 footer>ul>li:last-child::after {
     content: none;
-}
+} */
 
 /* 내용 */
 .adventage {
-    width: 850px;
+    width: 60%;
     height: 340px;
+    max-width: 850px;
     background-color: #f6f6f6;
     display: flex;
     justify-content: space-between;
@@ -203,8 +205,9 @@ footer>ul>li:last-child::after {
 }
 
 .ratings {
-    width: 1100px;
+    width: 70%;
     height: 340px;
+    max-width: 1100px;
     background-color: #f6f6f6;
     display: flex;
     justify-self: center;
@@ -299,9 +302,9 @@ footer>ul>li:last-child::after {
     justify-self: center;
     justify-content: end;
     align-items: center;
-    padding-right: 5%;
     padding-top: 5%;
     padding-bottom: 1%;
+    margin-right: 5vw;
 }
 
 .more a {
@@ -312,7 +315,6 @@ footer>ul>li:last-child::after {
 }
 
 .more p {
-    margin-right: 5px;
     font-size: 120%;
 }
 
@@ -394,7 +396,8 @@ footer>ul>li:last-child::after {
 
 .card {
     overflow: hidden;
-    width: 1100px;
+    width: 70%;
+    max-width: 1100px;
     height: 300px;
     border-radius: 20px 20px 20px 20px;
     box-shadow: 2px 2px 2px 2px var(--card-shadow);
@@ -415,7 +418,7 @@ footer>ul>li:last-child::after {
     font-size: large;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1534px) {
     header, .nav-menu>ul {
         display: block;
     }
@@ -448,12 +451,35 @@ footer>ul>li:last-child::after {
         height: 754px;
     }
 
-    .ratings, .card {
-        width: 850px;
+}
+
+@media screen and (max-width: 1240px) {
+    .review-img {
+        display: none;
+    }
+    .gyAGI, .card-description {
+        max-width: 80%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .adventage, .ratings, .card {
+        min-width: 260px;
+    }
+    .adventage {
+        justify-content: center;
+    }
+
+    .a-description {
+        margin: 0;
     }
 
     .more {
-        margin-right: 20%;
+        margin-right: 20vw;
+    }
+
+    .review1, .review2, .review3 {
+        margin: auto;
     }
 
     .review-img {
@@ -468,38 +494,53 @@ footer>ul>li:last-child::after {
     .review-img2, .review-img3 {
         margin-top: -80px;
     }
+
+    .a-img, .a-h-1, .a-h-2, .a-description>p {
+        display: none;
+        text-align: center;
+    }
 }
 
-@media screen and (max-width: 390px) {
-    header, .nav-menu>ul {
-        display: block;
+@media screen and (max-width: 780px) {
+    .card-group {
+        margin: 0;
+        padding-left: 0%;
+        justify-self: center;
     }
-    .nav-list {
-        transition: 0.3s;
-        overflow: hidden;
-        height: 0;
+    .adventage, .ratings, .card {
+        max-width: 500px;
     }
-    .nav-menu>ul>li {
-        margin-top: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+
+    .adventage {
+        text-align: center;
+        padding: 0;
+        margin-bottom: 20%;
     }
-    .nav-menu {
-        right: 120px;
-        position: fixed;
+
+    .ratings {
+        margin-bottom: 10%;
     }
-    
-    .nav-toggle {
-        display: contents;
+
+    .a-img, .a-h-1, .a-h-2, .a-description>p, .more {
+        display: none;
     }
-    .bx-menu {
-        cursor: pointer;
-        position: fixed;
-        top: 20px;
-        right: 20px;
+
+    .ratings1 {
+        text-align: center;
     }
-    .show-menu {
-        height: 754px;
+
+    .ratings2, .ratings3 {
+        display: none;
     }
+
+    .card-description, .review-img {
+        display: none;
+    }
+
+    .gyAGI {
+        max-width: 100%;
+        margin: 10%;
+        padding: 0;
+    }
+
 }
