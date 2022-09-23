@@ -348,8 +348,9 @@ h2::after {
         margin-bottom: 2rem;
     }
     .card-image {
-        width: 200px;
-        height: 200px;
+        width: 160px;
+        height: 160px;
+        background-size: 60px;
     }
     .introduction-container {
         width: 390px;
@@ -357,9 +358,21 @@ h2::after {
     .bestMenu-container {
         height: 300px;
         display: contents;
+        /* gap: 0; */
+    }
+    .circle {
+        padding-left: 6.4rem;
+        width: 180px;
     }
     .circle-image {
-        height: 280px;
+        height: 160px;
+        background-size: 100px;
+    }
+    .circle:nth-child(2)>.circle-image {
+        background-size: 120px;
+    }
+    .circle:nth-child(3)>.circle-image {
+        background-size: 120px;
     }
     .circle-menu {
         margin-top: 0;
