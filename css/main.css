@@ -95,7 +95,7 @@ h1, .text {
 }
 
 .section-image {
-    background-image: url('img/slide/slideImg3.png');
+    background-image: url('../img/slide/slideImg3.png');
     width: 640px;
     height: 300px;
     background-size: 500px;
@@ -160,13 +160,13 @@ h1, .text {
 }
 
 .card:nth-child(1)>figure {
-    background-image: url('img/icon/3021873\ 1.png');
+    background-image: url('../img/icon/3021873\ 1.png');
 }
 .card:nth-child(2)>figure {
-    background-image: url('img/icon/2836619.png');
+    background-image: url('../img/icon/2836619.png');
 }
 .card:nth-child(3)>figure {
-    background-image: url('img/icon/2224577\ 1.png');
+    background-image: url('../img/icon/2224577\ 1.png');
 }
 
 .bestMenu-container {
@@ -184,17 +184,17 @@ h1, .text {
 .circle:nth-child(1)>.circle-image {
     /* width: 380px; */
     
-    background-image: url('img/food/칼국수.png');
+    background-image: url('../img/food/칼국수.png');
 }
 .circle:nth-child(2)>.circle-image {
     /* width: 380px; */
     background-size: 320px;
-    background-image: url('img/food/칼제비.png');
+    background-image: url('../img/food/칼제비.png');
 }
 .circle:nth-child(3)>.circle-image {
     /* width: 380px; */
     background-size: 350px;
-    background-image: url('img/food/오징어볶음.png');
+    background-image: url('../img/food/오징어볶음.png');
 }
 .circle-menu {
     text-align: center;
