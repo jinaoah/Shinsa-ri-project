@@ -133,7 +133,7 @@ main {
 }
 
 figure {
-    background-image: url('img/food/칼국수.png');
+    background-image: url('../img/food/칼국수.png');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
@@ -164,72 +164,72 @@ figure {
 /* 음식사진 */
 .first-group>.card:nth-child(2)>figure {
     background-size: 210px;
-    background-image: url('img/food/수제비.png');
+    background-image: url('../img/food/수제비.png');
 }
 
 .first-group>.card:nth-child(3)>figure {
-    background-image: url('img/food/칼제비.png');
+    background-image: url('../img/food/칼제비.png');
 }
 .first-group>.card:nth-child(4)>figure {
     background-size: 390px;
-    background-image: url('img/food/만둣국.png');
+    background-image: url('../img/food/만둣국.png');
 }
 .first-group>.card:nth-child(5)>figure {
     background-size: 220px;
-    background-image: url('img/food/떡만둣국\ \(2\).png');
+    background-image: url('../img/food/떡만둣국\ \(2\).png');
 }
 
 /* 전류 */
 .second-group>.card:nth-child(1)>.card-image {
     background-size: 250px;
-    background-image: url('img/food/두부전.jpg');
+    background-image: url('../img/food/두부전.jpg');
 }
 
 .second-group>.card:nth-child(2)>.card-image {
     background-size: 280px;
-    background-image: url('img/food/김치전.png');
+    background-image: url('../img/food/김치전.png');
 }
 
 .second-group>.card:nth-child(4)>.card-image { 
     background-size: 250px;
-    background-image: url('img/food/녹두전.png');
+    background-image: url('../img/food/녹두전.png');
 }
 
 /* 안주류 */
 .third-group>.card:nth-child(1)>figure{
     background-size: 220px;
-    background-image: url('img/food/third-card-food\(1\).png');
+    background-image: url('../img/food/third-card-food\(1\).png');
 }
 .third-group>.card:nth-child(2)>.card-image {
-    background-image: url('img/food/제육볶음.png'); /*바꾸기*/
+    background-image: url('../img/food/제육볶음.png'); /*바꾸기*/
 }
 .third-group>.card:nth-child(3)>.card-image {
-    background-image: url('img/food/김치찌개.png');
+    background-image: url('../img/food/김치찌개.png');
 }
 .third-group>.card:nth-child(4)>.card-image {
-    background-image: url('img/food/동태탕.png');
+    background-image: url('../img/food/동태탕.png');
 }
 .third-group>.card:nth-child(5)>.card-image {
-    background-image: url('img/food/third-card-food\(5\).png');
+    background-image: url('../img/food/third-card-food\(5\).png');
 }
 .third-group>.card:nth-child(6)>.card-image {
-    background-image: url('img/food/third-card-food\(6\).png');
+    background-image: url('../img/food/third-card-food\(6\).png');
 }
 
 /* 주류 */
 .last-group>.card:nth-child(1)>.card-image {
-    background-image: url('img/food/막걸리.png');
+    background-image: url('../img/food/막걸리.png');
     background-size: 250px;
 }
 .last-group>.card:nth-child(2)>.card-image {
-    background-image: url('img/food/소주.png');
+    background-image: url('../img/food/소주.png');
 }
 .last-group>.card:nth-child(3)>.card-image {
-    background-image: url('img/food/맥주.png');
+    background-image: url('../img/food/맥주.png');
 }
 .last-group>.card:nth-child(4)>.card-image {
     background-size: 500px;
-    background-image: url('img/food/drink.png');
+    background-image: url('../img/food/drink.png');
 }
 
 .details {
