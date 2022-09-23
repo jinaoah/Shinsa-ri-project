@@ -45,6 +45,10 @@
             "mapWidth" : "1100",
             "mapHeight" : "360"
         }).render();
+
+        var markerPosition = marker.getPosition(); 
+        map.relayout();
+        map.setCenter(markerPosition);
     </script>
 
     <div class="address-wrapper">
@@ -54,16 +58,6 @@
             <p>지번  |  신림동 1587-27</p>
         </div>
     </div>
-
-    <footer>
-        <ul>
-            <li>가게 소개</li>
-            <li>이용약관</li>
-            <li>개인정보처리방침</li>
-            <li>이용안내</li>
-            <li>광고/제휴 문의</li>
-        </ul>
-    </footer>
 
 </body>
 </html>
