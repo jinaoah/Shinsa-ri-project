@@ -95,7 +95,7 @@ h1, .text {
 }
 
 .section-image {
-    background-image: url('/img/slide/slideImg3.png');
+    background-image: url('../img/slide/slideImg3.png');
     width: 640px;
     height: 300px;
     background-size: 500px;
@@ -131,6 +131,9 @@ h1, .text {
     align-items: center;
 }
 
+.cards {
+    display: flex;
+}
 .card {
     text-align: center;
 }
@@ -138,7 +141,14 @@ h1, .text {
     padding-top: 2rem;
     text-align: center;
 }
-.card-image {
+.card-image:hover {
+    transition: all 0.7s ease-in-out;
+    transform: scale(1.2);
+    box-shadow: none;
+}
+.card-image { 
+    transition: all 0.7s ease-in-out;
+    transform: scale(1);
     box-shadow: 4px 4px 4px 4px var(--card-shadow);
     border-radius: 200px;
     width: 274px;
@@ -150,13 +160,13 @@ h1, .text {
 }
 
 .card:nth-child(1)>figure {
-    background-image: url('/img/icon/3021873\ 1.png');
+    background-image: url('../img/icon/3021873\ 1.png');
 }
 .card:nth-child(2)>figure {
-    background-image: url('/img/icon/2836619.png');
+    background-image: url('../img/icon/2836619.png');
 }
 .card:nth-child(3)>figure {
-    background-image: url('/img/icon/2224577\ 1.png');
+    background-image: url('../img/icon/2224577\ 1.png');
 }
 
 .bestMenu-container {
@@ -174,17 +184,17 @@ h1, .text {
 .circle:nth-child(1)>.circle-image {
     /* width: 380px; */
     
-    background-image: url('/img/food/칼국수.png');
+    background-image: url('../img/food/칼국수.png');
 }
 .circle:nth-child(2)>.circle-image {
     /* width: 380px; */
     background-size: 320px;
-    background-image: url('/img/food/칼제비.png');
+    background-image: url('../img/food/칼제비.png');
 }
 .circle:nth-child(3)>.circle-image {
     /* width: 380px; */
     background-size: 350px;
-    background-image: url('/img/food/오징어볶음.png');
+    background-image: url('../img/food/오징어볶음.png');
 }
 .circle-menu {
     text-align: center;
@@ -245,41 +255,40 @@ h2::after {
     header {
         flex-direction: column;
         display: flex;
-        align-items: flex-end;
+        /* align-items: flex-end; */
     }
     .nav-menu {
         max-width: 390px;
-        width: 0;
         display: none;
+        /* height: 700px; */
         border-left: 2px solid var(--card-shadow);
     }
     .nav-menu.active {
-        margin-right: -20px;
+        margin-right: -100px;
         display: flex;
-        width: 300px;
         height: 700px;
+        width: 300px;
     }
+
     .nav-menu>ul>li {
-        text-align: end;
-        /* margin-top: 1.5rem; */
+        text-align: center;
         padding-right: 2rem;
     }
-    .nav-menu>ul>li:nth-child(1){
-        margin-top: 4.5rem;
-    }
+    .nav-menu>ul>li:nth-child(1),
     .nav-menu>ul>li:nth-child(4){
-        margin-bottom: 4.5rem;
+        visibility: hidden;
+        margin-top: 4.5rem;
     }
     .nav-menu>ul {
         margin-top: -1rem;
         justify-content: center;
         background-color: #fff;
         padding: 0;
-        width: 280px;
+        width: 290px;
         gap: 2rem;
         flex-direction: column;
+        align-items: flex-end;
         display: flex;
-        /* align-items: flex-end; */
     }
     .logo {
         position: absolute;
@@ -303,6 +312,95 @@ h2::after {
         font-size: 16px;
         gap: 0;
     }
+
+    /* 크기 조절 */
+    .container {
+        display: none;
+    }
+    .slide {
+        margin-top: 4rem;
+        width: 390px;
+        height: auto;
+    }
+    .section {
+        width: 390px;
+        margin-top:5rem;
+        font-size: medium;
+    }
+    .box-image, .section-text {
+        width: 390px;
+    }
+    .section-text {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .box-image>.section-image {
+        border-radius: 0;
+        width: 390px;
+        margin: 0;
+        background-size: 390px;
+    }
+    .cards {
+        display:block;
+    }
+    .card {
+        margin-bottom: 2rem;
+    }
+    .card-image {
+        width: 160px;
+        height: 160px;
+        background-size: 60px;
+    }
+    .introduction-container {
+        width: 390px;
+    }
+    .bestMenu-container {
+        height: 300px;
+        display: contents;
+        /* gap: 0; */
+    }
+    .circle {
+        padding-left: 6.4rem;
+        width: 180px;
+    }
+    .circle-image {
+        height: 160px;
+        background-size: 100px;
+    }
+    .circle:nth-child(2)>.circle-image {
+        background-size: 120px;
+    }
+    .circle:nth-child(3)>.circle-image {
+        background-size: 120px;
+    }
+    .circle-menu {
+        margin-top: 0;
+    }
+
+    .wrap_map {
+        width: 390px;
+    }
+    .hide {
+        width: 390px;
+        overflow: hidden;
+    }
+
+    .root_daum_roughmap .wrap_controllers .wrap_btn_roadview {
+        float: left;
+    }
+    .address>p {
+        font-size: smaller;
+    }
+    .bxs-phone-call, .bxs-map {
+        display: none !important;
+    }
+    .address-wrapper {
+        text-align: center;
+        display: contents;
+        margin-bottom: 4rem;
+    }
+
 }
 
 /* 노트북 반응형 */
@@ -320,5 +418,7 @@ h2::after {
         gap: 4rem;
         margin-bottom: 4rem;
     }
+    
+    
 
 }
