@@ -71,14 +71,407 @@ a {
     color: var(--main-color);
     transition: 0.3s;
 }
+.card-group {
+    width: 100%;
+    font-weight: 520;
+    text-align: center;
+    margin-bottom: 2.4rem;
+    padding-top: 4%;
+}
+.card-group:after {
+    content: "";
+    display: block;
+    width: 24px;
+    border-bottom: 3px solid var(--main-color);
+    margin: 10px auto;
+}
+/* 내용 */
+.adventage {
+    width: 60%;
+    height: 340px;
+    max-width: 850px;
+    background-color: #f6f6f6;
+    display: flex;
+    justify-content: space-between;
+    justify-self: center;
+    align-items: center;
+    margin-bottom: 150px;
+}
+
+.a-1, .a-2, .a-3 {
+    display: flex;
+    align-items: center;
+}
+
+.adventage i {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.a-description {
+    margin: 30px;
+    margin-left: 15%;
+
+}
+
+.a-description>p {
+    font-weight: 500;
+    font-size: 110%;
+    margin-top: 30px;
+}
+
+.adventage h4, .a-p {
+    display: block;
+    font-weight: bold;
+}
+
+.a-h-1, .a-h-2 {
+    display: inline-block;
+}
+
+.a-h-1 h4 {
+    font-size: 140%;
+    text-decoration: underline solid #FCAA72 2.5px;
+    text-underline-offset: 6px;
+}
+
+.a-p {
+    font-size: 160%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.a-img {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    margin-right: 15%;
+}
+
+.a-img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(50, 50);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: auto;
+    z-index: 0;
+}
+
+.ratings {
+    width: 70%;
+    height: 340px;
+    max-width: 1100px;
+    background-color: #f6f6f6;
+    display: flex;
+    justify-self: center;
+    justify-content: space-around;
+}
+
+.ratings p {
+    display: inline-block;
+}
+
+.rtitle{
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 140%;
+}
+
+.ratings1 {
+    width: 25%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.rp {
+    height: 60%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.stars {
+    color: #FCAA72;
+    display: flex;
+    justify-content: center;
+    padding-top: 15%;
+}
+
+.stars i {
+    font-size: 230%;
+}
+
+.b-1 {
+    font-weight:900;
+    font-size: 200%;
+    margin-top: -20%;
+}
+.p-1 {
+    font-weight: 900;
+    font-size: large;
+    color: #d2d2d2;
+    margin-top: -20%;
+    padding-left: 2%;
+}
+
+.ratings2 {
+    width: 25%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.bb-2 {
+    font-weight: 900;
+    font-size: 200%;
+}
+
+.b-2 {
+    font-weight: 900;
+    font-size: large;
+}
+
+.ratings3 {
+    width: 25%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.bb-3 {
+    font-weight: 900;
+    font-size: 200%;
+}
+
+.b-3 {
+    font-weight: 900;
+    font-size: large;
+}
+
+/* 리뷰 */
+
+.more {
+    width: 1100px;
+    display:flex;
+    justify-self: center;
+    justify-content: end;
+    align-items: center;
+    padding-top: 5%;
+    padding-bottom: 1%;
+    margin-right: 5vw;
+}
+
+.more a {
+    display:flex;
+    justify-self: center;
+    justify-content: end;
+    align-items: center;
+}
+
+.more p {
+    font-size: 120%;
+}
+
+.more i {
+    font-size: 120%;
+}
+
+.review-left {
+    max-width: 50%;
+}
+
+.gyAGI {
+    padding-left: 30px;
+    padding-top: 30px;
+    max-width: 50%;
+    margin-left: 3%;
+}
+
+.P1zUJ {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 4px 7px 0;
+    padding: 5px 9px 5px 7px;
+    border-radius: 4px;
+    background-color: #efefef;
+    box-sizing: border-box;
+    line-height: 1.5rem;
+}
+
+.P1zUJ img {
+    margin-bottom: -3px;
+}
+
+.review1 {
+    display: block;
+    display: flex;
+    justify-content: center;
+}
+
+.review2 {
+    display: block;
+    display: flex;
+    justify-content: center;
+}
+
+.review3 {
+    display: block;
+    display: flex;
+    justify-content: center;
+}
+
+.review-img {
+    width: 250px;
+    height: 250px;
+    position: relative;
+    margin-right: 15%;
+    float: right;
+}
+
+.review-img1 {
+    margin-top: -60px;
+}
+
+.review-img2, .review-img3 {
+    margin-top: -105px;
+}
+
+.rvimg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(50, 50);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: auto;
+    z-index: 0;
+}
+
+.card {
+    overflow: hidden;
+    width: 70%;
+    max-width: 1100px;
+    height: 300px;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 2px 2px 2px 2px var(--card-shadow);
+    background-color: var(--card-background-color);
+    margin-bottom: 5%;
+    background-color: #f8f8f8;
+}
+
+.card-description {
+    padding-top: 2%;
+    padding-left: 3%;
+    display: inline-block;
+    max-width: 50%;
+    margin-left: 3%;
+}
+
+.card-explanation {
+    font-size: large;
+}
 
 /* 반응형 */
 @media screen and (max-width: 1536px) { /*노트북*/
     .logo {
         margin-right: 13.3rem;
     }
+
+}
+@media screen and (max-width: 1240px) {
+    .review-img {
+        display: none;
+    }
+    .gyAGI, .card-description {
+        max-width: 80%;
+    }
 }
 
+@media screen and (max-width: 1200px) {
+    .adventage, .ratings, .card {
+        min-width: 260px;
+    }
+    .adventage {
+        justify-content: center;
+    }
+
+    .a-description {
+        margin: 0;
+    }
+
+    .more {
+        margin-right: 20vw;
+    }
+
+    .review1, .review2, .review3 {
+        margin: auto;
+    }
+
+    .review-img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .review-img1 {
+        margin-top: -35px;
+    }
+
+    .review-img2, .review-img3 {
+        margin-top: -80px;
+    }
+
+    .a-img, .a-h-1, .a-h-2, .a-description>p {
+        display: none;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .card-group {
+        margin: 0;
+        padding-left: 0%;
+        justify-self: center;
+    }
+    .adventage, .ratings, .card {
+        max-width: 500px;
+    }
+
+    .adventage {
+        text-align: center;
+        padding: 0;
+        margin-bottom: 20%;
+    }
+
+    .ratings {
+        margin-bottom: 10%;
+    }
+
+    .a-img, .a-h-1, .a-h-2, .a-description>p, .more {
+        display: none;
+    }
+
+    .ratings1 {
+        text-align: center;
+    }
+
+    .ratings2, .ratings3 {
+        display: none;
+    }
+
+    .card-description, .review-img {
+        display: none;
+    }
+
+    .gyAGI {
+        max-width: 100%;
+        margin: 10%;
+        padding: 0;
+    }
+
+}
 /* 핸드폰 */
 @media (max-width: 390px) {
     /* 반응형 헤더, 햄버거 메뉴 */
@@ -143,3 +536,4 @@ a {
             font-size: 16px;
             gap: 0;
         }
+    }

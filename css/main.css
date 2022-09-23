@@ -98,11 +98,10 @@ h1, .text {
     background-image: url('../img/slide/slideImg3.png');
     width: 640px;
     height: 300px;
-    background-size: 500px;
+    background-size: 600px;
     background-repeat: no-repeat;
     border-radius: 10px;
     background-position: center;
-    background-color: #FCAA72;
 }
 
 .box-image {
@@ -183,7 +182,7 @@ h1, .text {
 
 .circle:nth-child(1)>.circle-image {
     /* width: 380px; */
-    
+    background-size: 310px;
     background-image: url('../img/food/칼국수.png');
 }
 .circle:nth-child(2)>.circle-image {
@@ -193,7 +192,7 @@ h1, .text {
 }
 .circle:nth-child(3)>.circle-image {
     /* width: 380px; */
-    background-size: 350px;
+    background-size: 428px;
     background-image: url('../img/food/오징어볶음.png');
 }
 .circle-menu {
@@ -251,6 +250,9 @@ h2::after {
 
 /* 모바일 반응형 */
 @media (max-width: 390px) {
+    * {
+        overflow-x: hidden;
+    }
     /* 반응형 헤더, 햄버거 메뉴 */
     header {
         flex-direction: column;
@@ -368,11 +370,15 @@ h2::after {
         height: 160px;
         background-size: 100px;
     }
+    .circle:nth-child(1)>.circle-image {
+        background-size: 110px;
+        width: 100px;
+    }
     .circle:nth-child(2)>.circle-image {
         background-size: 120px;
     }
     .circle:nth-child(3)>.circle-image {
-        background-size: 120px;
+        background-size: 160px;
     }
     .circle-menu {
         margin-top: 0;
@@ -399,6 +405,14 @@ h2::after {
         text-align: center;
         display: contents;
         margin-bottom: 4rem;
+        font-size: smaller;
+    }
+    .address {
+        margin-top: 2rem;
+    }
+    .call {
+        margin-bottom: 2rem;
+
     }
 
 }

@@ -163,7 +163,7 @@ figure {
 
 /* 음식사진 */
 .first-group>.card:nth-child(2)>figure {
-    background-size: 210px;
+    background-size: 230px;
     background-image: url('../img/food/수제비.png');
 }
 
@@ -243,6 +243,7 @@ figure {
 
 #down > img {
     width: 36px;
+    margin-right: 2rem;
 }
 
 #down:hover {
@@ -431,6 +432,10 @@ footer>ul>li:last-child::after {
         width: 100px;
         background-size: 100px;
     }
+    .first-group>.card:nth-child(5)>figure {
+        background-size: 90px;
+    }
+
     .first-group>.card:nth-child(2)>.card-image,
     .third-group>.card:nth-child(1)>.card-image {
         background-size: 90px;
