@@ -189,6 +189,10 @@ figure {
     background-size: 280px;
     background-image: url('../img/food/김치전.png');
 }
+.second-group>.card:nth-child(3)>.card-image {
+    background-size: 220px;
+    background-image: url('../img/food/부추전.png');
+}
 
 .second-group>.card:nth-child(4)>.card-image { 
     background-size: 250px;
@@ -209,11 +213,12 @@ figure {
 .third-group>.card:nth-child(4)>.card-image {
     background-image: url('../img/food/동태탕.png');
 }
-.third-group>.card:nth-child(5)>.card-image {
-    background-image: url('../img/food/third-card-food\(5\).png');
+.third-group>.card:nth-child(7)>.card-image {
+    background-image: url('../img/food/third-card-food\(6\).png');
 }
 .third-group>.card:nth-child(6)>.card-image {
-    background-image: url('../img/food/third-card-food\(6\).png');
+    background-image: url('../img/food/third-card-food\(5\).png');
+
 }
 
 /* 주류 */
