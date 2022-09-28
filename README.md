@@ -6,7 +6,7 @@
 
 저희 팀은 별빛 신사리 상권 구역에 위치한 '이모네 전 칼국수' 점포를 홍보하는 웹사이트를 제작하게 되었습니다.     
 
-* 🍽️ [바로 가기](https://jinaoah.github.io/Shinsa-ri-project/)
+* 🍽️ [사이트 바로 가기](https://jinaoah.github.io/Shinsa-ri-project/)
 
 * [Desktop ver.](#home)
 
